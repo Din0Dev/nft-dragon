@@ -14,7 +14,7 @@ const HeaderLayout = (props) => {
     <Header className="header-layout">
       <div className="header-layout-inner">
         <div className="logo">
-          <Image src="img/logo.png" alt=""/>
+          <img src="img/logo.png" alt=""/>
         </div>
         <Menu className="header-layout__menu" defaultSelectedKeys={["2"]}>
           <Menu.Item>Matketplace</Menu.Item>
