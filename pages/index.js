@@ -10,7 +10,6 @@ const Home = (props) => {
   return (
     <div className="home-page">
       <Banner />
-      <TabsLayout />
       <DragonToken />
       <AmryTournament />
       <DragonWars />
