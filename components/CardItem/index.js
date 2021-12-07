@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const CardItem = () => {
   const imgstyle = { maxHeight: "12px", maxWidth: "12px", width: "12px" };
@@ -45,45 +46,47 @@ const CardItem = () => {
       </div>
         {/* IMG */}
         <div className="flex justify-center h-32 sm:h-36 py-3 relative">
-          <img
+          <Image
             src="https://devabcde-api.dragonwars.game/resource/dragons/1552/250x1552.png"
             className="h-full"
+            alt=""
+          
           />
         </div>
         {/* INFO */}
         <div className="grid grid-cols-3 mt-2">
           <div className="flex justify-center items-center">
-            <img src="/icon/health.svg" style={imgstyle} />
+            <Image src="/icon/health.svg" style={imgstyle} alt="" />
             <div className="text-white ml-2">
               <p className="text-sm-md">16</p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="/icon/generation.svg" style={imgstyle} />
+            <Image src="/icon/generation.svg" style={imgstyle} alt="" />
             <div className="text-white ml-2">
               <p className="text-sm-md">18</p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="/icon/attack.svg" style={imgstyle} />
+            <Image src="/icon/attack.svg" style={imgstyle} alt="" />
             <div className="text-white ml-2">
               <p className="text-sm-md">16</p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="/icon/defend.svg" style={imgstyle} />
+            <Image src="/icon/defend.svg" style={imgstyle} alt=""/>
             <div className="text-white ml-2">
               <p className="text-sm-md">19</p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="/icon/speed.svg" style={imgstyle} />
+            <Image src="/icon/speed.svg" style={imgstyle} alt=""/>
             <div className="text-white ml-2">
               <p className="text-sm-md">17</p>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="/icon/morale.svg" style={imgstyle} />
+            <Image src="/icon/morale.svg" style={imgstyle} alt=""/>
             <div className="text-white ml-2">
               <p className="text-sm-md">19</p>
             </div>

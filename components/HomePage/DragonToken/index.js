@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const DragonToken = (props) => {
     return(
@@ -12,7 +13,7 @@ const DragonToken = (props) => {
                         </div>
                     </div>
                     <div className="col-span-6">
-                        <img src="/img/home-slider-1.png" className="w-full h-full round-lg" />
+                        <Image src="/img/home-slider-1.png" className="w-full h-full round-lg" alt=""/>
                     </div>
                 </div>
             </div>

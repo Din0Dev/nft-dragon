@@ -1,6 +1,8 @@
 import React from "react";
 import { Tabs } from "antd";
 import CardItem from "../../CardItem";
+import Image from 'next/image'
+
 const { TabPane } = Tabs;
 
 const TabsLayout = (props) => {
@@ -22,7 +24,7 @@ const TabsLayout = (props) => {
 
         <div className="flex justify-center mt-5">
           <button style={{border: 'none', border: '1px solid', margin: '0.5rem', paddingRight: '2rem', paddingLeft: '2rem', fontSize: '16px'}} className="flex items-center rounded-xl justify-center p-2 h-7 bg-primary hover:opacity-80 text-blue4 bg-transparent-important border-1 border-blue2 px-8 text-sm-md h-8">
-            View more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="ml-2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            View more <Image src="icon/next.svg" alt=""/>
           </button>
           </div>
       </TabPane>
