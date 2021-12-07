@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  line-height: inherit;
+}
+//* Custom
+.btn-blue {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--bg-color);
+  border: 2px solid var(--bg-color);
+  background: var(--button-blue-color);
+}
+
+.btn-orange {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--bg-color);
+  border: 2px solid var(--bg-color);
+  background: var(--button-orange-color);
+}
+
+.bg-tournament{
+  background-image: url(/img/dragon-legend-2.png)
+}
+.bg-amry {
+  background-image: url(/img/dragon-legend-1.png)
+
+}
+.bg-dragonwars{
+  background-image: url(/img/slide-home-bottom1.png); 
+  background-size: cover;
+}
+.bg-blur-black{
+  background: var(--blur-bg-black);
+}
+.home-card-dragon {
+  height: 550px !important;
+  border: 8px solid var(--color-blue-2);
+}
+
+//* Header Layout
+
+.header-layout {
+  height: 80px;
+  line-height: 1;
+  max-height: 80px;
+  background-color: var(--color-primary);
+  .header-layout-inner {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    .logo {
+      width: 126px;
+      height: 80px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 35%;
+        z-index: 200;
+        width: 126px;
+        height: 126px;
+      }
+    }
+    .header-layout__menu {
+      border: none;
+      background: none;
+      display: flex;
+      height: 80px;
+      align-items: center;
+      li {
+        padding-right: 30px;
+        display: flex;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--bg-color);
+        align-items: center;
+      }
+    }
+    .header-layout__button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .sb-btn {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+footer{
+background: var(--color-blue-1);
+color: white;
+}
+
+//* Item
+.card-item {
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: var(--color-blue-1);
+  border: 2px solid var(--color-blue-2);
+  color: var(--bg-color);
+  margin: 0.5rem;
+
+  .span-common {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 10px;
+    background: var(--color-blue-2);
+  }
+}

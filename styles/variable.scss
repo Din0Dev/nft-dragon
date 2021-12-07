@@ -1,0 +1,42 @@
+:root {
+  font-size: 16px;
+  --color-main: #000;
+  --bg-color: #fff;
+  --color-progress: red;
+  --color-primary: #002547;
+  --color-blue-1: #0d1b29;
+  --color-blue-2: #215188;
+  --color-blue-3: #0d3050;
+  --color-blue-4: #49beff;
+  --color-blue-5: rgba(10, 21, 32, 0.6);
+  --color-white-1: #b8cce0;
+  --color-orange-85: rgba(242, 114, 16, 0.8509803921568627);
+  --color-orange-50: rgba(247, 154, 6, 0.5294117647058824);
+  --color-orange-stroke: #ff8f39;
+  --color-brown: #451900;
+  --color-brown80: rgba(71, 26, 0, 0.8);
+  --color-black80: rgba(0, 0, 0, 0.8);
+  --color-cyan: #80bd39;
+  --color-water: #00bdd9;
+  --color-fire: #ee0707;
+  --color-metal: #f1a614;
+  --color-earth: #c77e55;
+  --color-violet: #1d1429;
+  --color-white50: hsla(0, 0%, 100%, 0.5019607843137255);
+  --height: 100vh;
+  --color-disabled: hsla(0, 0%, 46.3%, 0.30196078431372547);
+  --color-skin: #d4ac5c;
+  --color-green1: #00ab00;
+  --button-blue-color: linear-gradient(
+    to right,
+    rgb(72, 202, 228),
+    rgb(0, 104, 180)
+  );
+  --button-orange-color: linear-gradient(
+    to right,
+    rgb(255, 168, 0),
+    rgb(255, 111, 0)
+  );
+  --blur-bg-black: linear-gradient(to top, rgba(17, 17, 17, 0.84) 0%, rgba(69, 25, 0, 0) 100%);
+
+}
