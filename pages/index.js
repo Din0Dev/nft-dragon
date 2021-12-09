@@ -3,8 +3,7 @@ import AmryTournament from "../components/HomePage/AmryTournament";
 import Banner from "../components/HomePage/Banner";
 import DragonToken from "../components/HomePage/DragonToken";
 import DragonWars from "../components/HomePage/DragonWars";
-import RoadMap from "../components/HomePage/RoadMap/index,";
-import TabsLayout from "../components/HomePage/Tabs";
+import RoadMap from "../components/RoadMap";
 
 const Home = (props) => {
   return (
