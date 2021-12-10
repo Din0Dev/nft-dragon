@@ -14,6 +14,9 @@ body {
   color: var(--bg-color);
   border: 2px solid var(--bg-color);
   background: var(--button-blue-color);
+  @include sm{
+    font-size: 7px;
+  }
 }
 
 .btn-orange {
@@ -26,18 +29,17 @@ body {
   background: var(--button-orange-color);
 }
 
-.bg-tournament{
-  background-image: url(/img/dragon-legend-2.png)
+.bg-tournament {
+  background-image: url(/img/dragon-legend-2.png);
 }
 .bg-amry {
-  background-image: url(/img/dragon-legend-1.png)
-
+  background-image: url(/img/dragon-legend-1.png);
 }
-.bg-dragonwars{
-  background-image: url(/img/slide-home-bottom1.png); 
+.bg-dragonwars {
+  background-image: url(/img/slide-home-bottom1.png);
   background-size: cover;
 }
-.bg-blur-black{
+.bg-blur-black {
   background: var(--blur-bg-black);
 }
 .home-card-dragon {
@@ -68,9 +70,25 @@ body {
         z-index: 200;
         width: 126px;
         height: 126px;
+        @include mds{
+          top: 0;
+          left: 10px;
+          z-index: 200;
+          width: 80px;
+          height: 80px;
+        }
       }
     }
     .header-layout__menu {
+      @include lg {
+        display: none;
+      }
+      @include md {
+        display: none;
+      }
+      @include sm {
+        display: none;
+      }
       border: none;
       background: none;
       display: flex;
@@ -85,19 +103,59 @@ body {
         align-items: center;
       }
     }
+    .header-layout__menu_mobile {
+      background-color: var(--color-primary);
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+      li {
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+        font-size: 18px;
+        color: var(--bg-color);
+        align-items: center;
+      }
+      .ant-menu-item-selected{
+        background-color: var(--color-blue-2);
+      }
+      li:hover{
+        background-color: var(--color-blue-2);
+      }
+    }
     .header-layout__button {
       display: flex;
       align-items: center;
       justify-content: space-around;
       .sb-btn {
+        @include sm{
+          margin-right: 0;
+        }
         margin-right: 30px;
+      }
+      .header-layout__button_hamburger {
+        cursor: pointer;
+        display: none;
+        @include lg {
+          display: block;
+        }
       }
     }
   }
 }
-footer{
-background: var(--color-blue-1);
-color: white;
+.menu-mobile {
+  background-color: var(--color-primary);
+  max-width: 520px;
+  position: fixed !important;
+  top: 0;
+  z-index: 9999 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+footer {
+  background: var(--color-blue-1);
+  color: white;
 }
 
 //* Item
