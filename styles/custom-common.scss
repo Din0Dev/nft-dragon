@@ -11,6 +11,10 @@ body {
   line-height: inherit;
 }
 //* Custom
+
+.bg-color-primary {
+  background-color: var(--color-blue-3);
+}
 .btn-blue {
   font-size: 16px;
   font-weight: 700;

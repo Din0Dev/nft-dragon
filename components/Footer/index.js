@@ -10,7 +10,7 @@ const FooterLayout= () => {
 
   //! Render
   return (
-    <Footer style={{ textAlign: 'center' }}>Dragon Wars Footer</Footer>
+    <Footer className="bg-color-primary" style={{ textAlign: 'center', color: 'white' }}>Dragon Wars Footer</Footer>
   );
 };
 
