@@ -31,6 +31,9 @@ body {
 .btn-orange {
   font-size: 16px;
   font-weight: 700;
+  @include sm{
+    padding: 10px;
+  }
   padding: 10px 20px;
   border-radius: 20px;
   color: var(--bg-color);
@@ -70,21 +73,30 @@ body {
     justify-content: space-between;
     margin: auto;
     .logo {
-      width: 126px;
+      @include md {
+        width: 126px;
+      }
+      @include sm{
+        width: 126px;
+      }
+      width: 200px;
       height: 80px;
       position: relative;
       img {
         position: absolute;
-        top: 35%;
+        top: 10%;
+        @include md {
+          top: 0;
+        }
+        @include sm{
+          top: -10px
+        }
         z-index: 200;
-        width: 126px;
-        height: 126px;
+        width: 100%;
         @include mds {
           top: 0;
           left: 10px;
           z-index: 200;
-          width: 80px;
-          height: 80px;
         }
       }
     }
