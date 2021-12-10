@@ -63,7 +63,7 @@
       padding-right: 2.5rem;
       .gd-btn {
         @include md{
-          width: 55%;
+          width: 65%;
           margin-right: 0;
         }
         margin-right: 30px;
@@ -71,7 +71,7 @@
       .clw-btn{
         @include md{
           margin-top: 1rem;
-          width: 55%;
+          width: 65%;
         }
       }
     }
