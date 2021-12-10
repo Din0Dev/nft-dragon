@@ -3,7 +3,6 @@
   src: url(/fonts/RobotoSlab-Regular.ttf);
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -20,7 +19,7 @@ body {
   color: var(--bg-color);
   border: 2px solid var(--bg-color);
   background: var(--button-blue-color);
-  @include sm{
+  @include sm {
     font-size: 7px;
   }
 }
@@ -76,7 +75,7 @@ body {
         z-index: 200;
         width: 126px;
         height: 126px;
-        @include mds{
+        @include mds {
           top: 0;
           left: 10px;
           z-index: 200;
@@ -123,10 +122,10 @@ body {
         color: var(--bg-color);
         align-items: center;
       }
-      .ant-menu-item-selected{
+      .ant-menu-item-selected {
         background-color: var(--color-blue-2);
       }
-      li:hover{
+      li:hover {
         background-color: var(--color-blue-2);
       }
     }
@@ -135,7 +134,7 @@ body {
       align-items: center;
       justify-content: space-around;
       .sb-btn {
-        @include sm{
+        @include sm {
           margin-right: 0;
         }
         margin-right: 30px;
@@ -158,6 +157,7 @@ body {
   z-index: 9999 !important;
   overflow-y: auto;
   overflow-x: hidden;
+  height: 100vh;
 }
 footer {
   background: var(--color-blue-1);
