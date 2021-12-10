@@ -1,8 +1,14 @@
+@font-face {
+  font-family: RobotoSlab;
+  src: url(/fonts/RobotoSlab-Regular.ttf);
+}
+
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto";
+  font-family: RobotoSlab;
   line-height: inherit;
 }
 //* Custom

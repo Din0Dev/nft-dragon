@@ -7,7 +7,6 @@ import DefaultLayout from "layout/DefaultLayout";
 import "nprogress/nprogress.css";
 import 'antd/dist/antd.css';
 import "../styles/styles.scss";
-import "../styles/globals.css";
 
 Router.events.on("routeChangeStart", nProgress.start);
 Router.events.on("routeChangeError", nProgress.done);
