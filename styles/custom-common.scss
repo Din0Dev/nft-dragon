@@ -31,7 +31,7 @@ body {
 .btn-orange {
   font-size: 16px;
   font-weight: 700;
-  @include sm{
+  @include sm {
     padding: 10px;
   }
   padding: 10px 20px;
@@ -76,7 +76,7 @@ body {
       @include md {
         width: 126px;
       }
-      @include sm{
+      @include sm {
         width: 126px;
       }
       width: 200px;
@@ -88,8 +88,8 @@ body {
         @include md {
           top: 0;
         }
-        @include sm{
-          top: -10px
+        @include sm {
+          top: -10px;
         }
         z-index: 200;
         width: 100%;
@@ -115,6 +115,12 @@ body {
       display: flex;
       height: 80px;
       align-items: center;
+      .ant-menu-item-selected {
+        background: none;
+      }
+      li:hover {
+        background: fixed;
+      }
       li {
         padding-right: 30px;
         display: flex;

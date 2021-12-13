@@ -36,8 +36,8 @@ const HeaderLayout = (props) => {
         </Menu>
         {/*  */}
         <div className="header-layout__button">
-          <button className="btn-blue sb-btn">Start Battle</button>
-          <button className="btn-blue clw-btn">Collect wallet</button>
+          {/* <button className="btn-blue sb-btn">Start Battle</button>
+          <button className="btn-blue clw-btn">Collect wallet</button> */}
           <div
             className="header-layout__button_hamburger p-4 space-y-2 rounded shadow"
             onClick={handleChange}
