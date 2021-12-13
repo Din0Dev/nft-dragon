@@ -21,6 +21,11 @@
   }
 }
 
+@mixin xls {
+  @media (max-width: 1290px) {
+    @content
+  }
+}
 @mixin xl {
   @media (min-width: 1440px) {
     @content;

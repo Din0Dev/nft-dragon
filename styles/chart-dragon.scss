@@ -6,23 +6,32 @@
   .container {
     margin: auto;
     .row {
-      --bs-gutter-x: 1.5rem;
-      --bs-gutter-y: 0;
       display: flex;
       flex-wrap: wrap;
-      margin-top: calc(var(--bs-gutter-y) * -1);
-      margin-right: calc(var(--bs-gutter-x) * -0.5);
-      margin-left: calc(var(--bs-gutter-x) * -0.5);
+      justify-content: center;
     }
   }
   .chart-textarea {
     max-width: 600px;
     text-align: center;
-    margin: 140px auto 0;
-    @include lg {
+    margin: 50px auto 0;
+    h1 {
+      margin-bottom: 50px;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    @include xls {
       max-width: 400px;
-      text-align: center;
-      margin: 150px auto 0;
+    }
+    @include lg {
+      margin: 80px auto 0;
+    }
+    @include md {
     }
   }
 }
