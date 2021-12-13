@@ -28,11 +28,11 @@ const HeaderLayout = (props) => {
           className="header-layout__menu hidden lg:flex flex-wrap justify-center md:h-full"
           defaultSelectedKeys={["2"]}
         >
-          <Menu.Item>Matketplace</Menu.Item>
-          <Menu.Item>Breed</Menu.Item>
-          <Menu.Item>My Dragons</Menu.Item>
-          <Menu.Item>Events</Menu.Item>
-          <Menu.Item>Get DRAGON</Menu.Item>
+          <Menu.Item>HOME</Menu.Item>
+            <Menu.Item>Matketplace</Menu.Item>
+            <Menu.Item>Tokenomics</Menu.Item>
+            <Menu.Item>Roadmap</Menu.Item>
+            <Menu.Item>Partner</Menu.Item>
         </Menu>
         {/*  */}
         <div className="header-layout__button">
@@ -70,11 +70,11 @@ const HeaderLayout = (props) => {
             defaultSelectedKeys={["2"]}
             mode="inline"
           >
+            <Menu.Item>HOME</Menu.Item>
             <Menu.Item>Matketplace</Menu.Item>
-            <Menu.Item>Breed</Menu.Item>
-            <Menu.Item>My Dragons</Menu.Item>
-            <Menu.Item>Events</Menu.Item>
-            <Menu.Item>Get DRAGON</Menu.Item>
+            <Menu.Item>Tokenomics</Menu.Item>
+            <Menu.Item>Roadmap</Menu.Item>
+            <Menu.Item>Partner</Menu.Item>
           </Menu>
         </div>
       </div>

@@ -9,11 +9,13 @@
       justify-content: center;
     }
   }
-  img{
-    display: flex;
-    justify-content: center;
-    max-width: 1260px;
-    margin: 0 auto;
+  .chart-img{
+    background: black;
+    img{
+      display: flex;
+      justify-content: center;  
+      margin: 0 auto;
+    }
   }
   .chart-textarea {
     max-width: 600px;
