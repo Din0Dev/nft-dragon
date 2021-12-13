@@ -1,0 +1,28 @@
+.chart-dragon {
+  padding: 300px 0;
+  background: url(/img/section-chart.jpg) no-repeat 50%;
+  margin: 0;
+  background-size: cover;
+  .container {
+    margin: auto;
+    .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x) * -0.5);
+      margin-left: calc(var(--bs-gutter-x) * -0.5);
+    }
+  }
+  .chart-textarea {
+    max-width: 600px;
+    text-align: center;
+    margin: 140px auto 0;
+    @include lg {
+      max-width: 400px;
+      text-align: center;
+      margin: 150px auto 0;
+    }
+  }
+}
