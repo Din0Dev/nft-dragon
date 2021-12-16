@@ -1,8 +1,31 @@
 .home-page {
+  position: relative;
   background-image: url(/img/bg-home-main.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.crystal {
+  position: absolute;
+  -webkit-animation: floating 5s ease-in-out infinite;
+  animation: floating 5s ease-in-out infinite;
+  &__img{
+    @include md {
+      max-width: 125px;
+    }
+  }
 }
 .banner {
   background-image: url(/img/bg-home-banner.png);
@@ -44,7 +67,7 @@
           margin: 0 auto;
           font-size: 2.5rem;
         }
-        @include sm{
+        @include sm {
           font-size: 2rem;
         }
       }
@@ -62,14 +85,14 @@
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       .gd-btn {
-        @include md{
+        @include md {
           width: 65%;
           margin-right: 0;
         }
         margin-right: 30px;
       }
-      .clw-btn{
-        @include md{
+      .clw-btn {
+        @include md {
           margin-top: 1rem;
           width: 65%;
         }
@@ -146,5 +169,24 @@
         width: 50%;
       }
     }
+  }
+}
+
+.position-left-20-lg {
+  @include lg {
+    position: absolute;
+    left: 0%;
+  }
+}
+.position-left-20-md {
+  @include md {
+    position: absolute;
+    left: 0%;
+  }
+}
+.position-left-20-xs {
+  @include sm {
+    position: absolute;
+    left: 0%;
   }
 }

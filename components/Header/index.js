@@ -59,11 +59,11 @@ const HeaderLayout = (props) => {
               className="rounded p-3 bg-dropdown-item-hover mr-4 cursor-pointer"
               onClick={onCloseMenu}
             >
-              <img src="icon/close.svg" />
+              <img src="icon/close.svg" alt="" />
             </div>
           </div>
           <div className="flex justify-center mb-5">
-            <img src="img/logo.png" />
+            <img src="img/logo.png" alt="" />
           </div>
           <Menu
             className="header-layout__menu_mobile hidden lg:flex flex-wrap justify-center md:h-full"

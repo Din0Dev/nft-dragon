@@ -37,6 +37,44 @@
     rgb(255, 168, 0),
     rgb(255, 111, 0)
   );
-  --blur-bg-black: linear-gradient(to top, rgba(17, 17, 17, 0.84) 0%, rgba(69, 25, 0, 0) 100%);
+  --blur-bg-black: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 0.84) 0%,
+    rgba(69, 25, 0, 0) 100%
+  );
+  //Custom
+  .index-99999 {
+    z-index: 99999;
+  }
+  .position-right {
+    right: 0;
+  }
+  .position-right-5 {
+    right: 5%;
+  }
+  .position-right-10 {
+    right: 10%;
+  }
+  .position-right-15 {
+    right: 15%;
+  }
+  .position-right-20 {
+    right: 20%;
+  }
+  .position-left {
+    left: 0;
+  }
+  .position-left-5 {
+    left: 5%;
+  }
+  .position-left-10 {
+    left: 10%;
+  }
+  .position-left-15 {
+    left: 15%;
+  }
+  .position-left-20 {
+    left: 20%;
+  }
 
 }
