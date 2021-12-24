@@ -5,6 +5,7 @@ import Banner from "../components/HomePage/Banner";
 import ChartDragon from "../components/HomePage/ChartDragon";
 import DragonToken from "../components/HomePage/DragonToken";
 import DragonWars from "../components/HomePage/DragonWars";
+import PartnerAdvisor from "../components/HomePage/PartnerAdvisor";
 import RoadMap from "../components/RoadMap";
 
 const Home = (props) => {
@@ -32,6 +33,7 @@ const Home = (props) => {
         style={{ width: "286px", paddingTop: "100px" }}
       />
       <RoadMap />
+      <PartnerAdvisor />
     </div>
   );
 };

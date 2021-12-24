@@ -41,3 +41,24 @@
     }
   }
 }
+
+.partner-advisor {
+  margin: 0;
+  background-size: cover;
+  .container {
+    margin: auto;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .partner-img, .advisor-img{
+    background: black;
+    img{
+      display: flex;
+      justify-content: center;  
+      margin: 0 auto;
+    }
+  }
+}
