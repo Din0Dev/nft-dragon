@@ -26,6 +26,37 @@
       max-width: 125px;
     }
   }
+  .purple-crystal{
+    @include lg{
+      padding-top: 120px !important;
+    }
+    @include md{
+      padding-top: 200px !important;
+    }
+    @include mds {
+      padding-top: 280px !important;
+    }
+  }
+  .blue-crystal{
+    @include lg{
+      width: 200px !important;
+    }
+  }
+  .green-crystal {
+    @include lg{
+      width: 200px !important;
+      padding-top: 220px !important;
+    }
+  }
+  .orange-crystal{
+    @include lg{
+      width: 200px !important;
+      padding-top: 0px !important;
+    }
+    @include mds{
+      padding: 0 !important;
+    }
+  }
 }
 .banner {
   background-image: url(/img/bg-home-banner.png);
@@ -175,18 +206,18 @@
 .position-left-20-lg {
   @include lg {
     position: absolute;
-    left: 0%;
+    left: 0% !important;
   }
 }
 .position-left-20-md {
   @include md {
     position: absolute;
-    left: 0%;
+    left: 0% !important;
   }
 }
 .position-left-20-xs {
   @include sm {
     position: absolute;
-    left: 0%;
+    left: 0% !important;
   }
 }
