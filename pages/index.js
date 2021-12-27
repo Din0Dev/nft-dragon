@@ -13,15 +13,16 @@ const Home = (props) => {
   return (
     <div className="home-page">
       <Banner />
-      <Crystal isPurple style={{ width: "200px", paddingTop: "100px" }} />
+      <Crystal isPurple className="purple-crystal" style={{ width: "200px", paddingTop: "100px" }} />
       <DragonToken />
       {/* <AmryTournament /> */}
       <CharacterSlide />
-      <Crystal isBlue style={{ width: "286px" }} position="position-right" />
+      <Crystal isBlue className="blue-crystal" style={{ width: "286px" }} position="position-right" />
       <Crystal
         isGreen
+        className="green-crystal"
         style={{ width: "286px", paddingTop: "100px" }}
-        position="position-right-10"Ư
+        position="position-right-10"
       />
       <DragonWars />
       <Crystal
@@ -31,7 +32,8 @@ const Home = (props) => {
       <ChartDragon />
       <Crystal
         isOrange
-        position= "index-99999 position-left-20-md position-left-20-xs position-left-20"
+        className="orange-crystal"
+        position= "index-99999 position-left-20-md position-left-20-xs "
         style={{ width: "286px", paddingTop: "100px" }}
       />
       <RoadMap />
