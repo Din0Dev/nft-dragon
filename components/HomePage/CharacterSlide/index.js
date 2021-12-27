@@ -1,11 +1,49 @@
 import React from "react";
-const AmryTournament = (props) => {
+import Slider from "react-slick";
+
+const CharacterSlide = () => {
   //! State
 
+  var settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
+    initialSlide: 0,
+    responsive: [
+        {
+          breakpoint: 1290,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  };
+
+  //! Render
   return (
     <div className="mx-4 md:mx-10 my-12 mt-0">
       <div className="container max-w-screen-xl m-auto">
-        <div className="grid gird-cols-1 md:grid-cols-4 mb-12 md:mb-24 ">
+        <Slider {...settings}>
           {/*  */}
           <div className="m-auto h-full col-span-1 pt-4 w-full">
             <div className="mx-4 md:mx-1">
@@ -74,10 +112,10 @@ const AmryTournament = (props) => {
             </div>
           </div>
           {/* -- */}
-        </div>
+        </Slider>
       </div>
     </div>
   );
 };
 
-export default AmryTournament;
+export default CharacterSlide;

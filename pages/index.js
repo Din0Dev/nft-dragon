@@ -2,6 +2,7 @@ import Link from "next/link";
 import Crystal from "../components/Crystal";
 import AmryTournament from "../components/HomePage/AmryTournament";
 import Banner from "../components/HomePage/Banner";
+import CharacterSlide from "../components/HomePage/CharacterSlide";
 import ChartDragon from "../components/HomePage/ChartDragon";
 import DragonToken from "../components/HomePage/DragonToken";
 import DragonWars from "../components/HomePage/DragonWars";
@@ -14,12 +15,13 @@ const Home = (props) => {
       <Banner />
       <Crystal isPurple style={{ width: "200px", paddingTop: "100px" }} />
       <DragonToken />
-      <AmryTournament />
+      {/* <AmryTournament /> */}
+      <CharacterSlide />
       <Crystal isBlue style={{ width: "286px" }} position="position-right" />
       <Crystal
         isGreen
         style={{ width: "286px", paddingTop: "100px" }}
-        position="position-right-10"
+        position="position-right-10"Ư
       />
       <DragonWars />
       <Crystal
