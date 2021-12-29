@@ -31,7 +31,7 @@ const CharacterSlide = () => {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     initialSlide: 0,
