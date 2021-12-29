@@ -21,39 +21,39 @@
   position: absolute;
   -webkit-animation: floating 5s ease-in-out infinite;
   animation: floating 5s ease-in-out infinite;
-  &__img{
+  &__img {
     @include md {
       max-width: 125px;
     }
   }
-  .purple-crystal{
-    @include lg{
+  .purple-crystal {
+    @include lg {
       padding-top: 120px !important;
     }
-    @include md{
+    @include md {
       padding-top: 200px !important;
     }
     @include mds {
       padding-top: 280px !important;
     }
   }
-  .blue-crystal{
-    @include lg{
+  .blue-crystal {
+    @include lg {
       width: 200px !important;
     }
   }
   .green-crystal {
-    @include lg{
+    @include lg {
       width: 200px !important;
       padding-top: 220px !important;
     }
   }
-  .orange-crystal{
-    @include lg{
+  .orange-crystal {
+    @include lg {
       width: 200px !important;
       padding-top: 0px !important;
     }
-    @include mds{
+    @include mds {
       padding: 0 !important;
     }
   }
@@ -171,6 +171,64 @@
   }
 }
 
+//
+.slick-arrow {
+  width: 45px !important;
+  height: 45px !important;
+  @include md {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  @include sm {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.slick-prev:before,
+.slick-next::before {
+  font-size: 45px !important;
+  @include md {
+    font-size: 40px !important;
+  }
+  @include sm {
+    font-size: 35px !important;
+  }
+}
+.slick-prev {
+  left: -45px !important;
+  @include md {
+    left: -5px !important;
+  }
+  @include sm {
+    left: 0px !important;
+  }
+}
+.slick-next {
+  right: -45px !important;
+  @include md {
+    right: -5px !important;
+  }
+  @include sm {
+    right: 0px !important;
+  }
+}
+.slick-list {
+  @include md {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+  @include sm {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+}
+.card-reposive {
+  margin: 0 0.5rem;
+}
 //*
 .roadmap-common {
   .label-custom {
