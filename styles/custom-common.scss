@@ -63,10 +63,7 @@ body {
 .bg-blur-black {
   background: var(--blur-bg-black);
 }
-.home-card-dragon {
-  height: 550px !important;
-  border: 8px solid var(--color-blue-2);
-}
+
 
 //* Header Layout
 
@@ -74,12 +71,22 @@ body {
   height: 80px;
   line-height: 1;
   max-height: 80px;
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
   .header-layout-inner {
     max-width: 1280px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    @include md {
+      padding: 0 3rem;
+      justify-content: space-between;
+    }
+    @include mds {
+      padding: 0 1rem;
+    }
+    @include sm {
+      padding: 0 0.3rem;
+    }
     margin: auto;
     .logo {
       @include md {
@@ -134,7 +141,6 @@ body {
         padding-right: 30px;
         display: flex;
         font-size: 18px;
-        font-weight: bold;
         color: var(--bg-color);
         align-items: center;
       }
@@ -164,6 +170,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      
       .sb-btn {
         @include sm {
           margin-right: 0;
@@ -212,5 +219,18 @@ footer {
     padding-right: 0.75rem;
     border-radius: 10px;
     background: var(--color-blue-2);
+  }
+}
+
+// Text Fragment
+.text-fragment{
+  padding-top: 5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  @include md{
+    max-width: 400px;
+  }
+  @include sm{
+    max-width: 250px;
   }
 }

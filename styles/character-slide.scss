@@ -1,0 +1,83 @@
+.hero {
+  padding-bottom: 10rem;
+  @include md {
+    padding-bottom: 5rem;
+  }
+  @include sm {
+    padding-bottom: 3rem;
+  }
+  .home-card-dragon {
+    height: 450px !important;
+  }
+  .character-slide {
+    .slick-arrow {
+      width: 55px !important;
+      height: 55px !important;
+      @include md {
+        width: 55px !important;
+        height: 55px !important;
+      }
+      @include sm {
+        width: 45px !important;
+        height: 45px !important;
+      }
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+    .slick-prev:before,
+    .slick-next::before {
+      font-size: 45px !important;
+      @include md {
+        font-size: 40px !important;
+      }
+      @include sm {
+        font-size: 35px !important;
+      }
+    }
+    .slick-prev {
+      left: 20px !important;
+      @include md {
+        left: 50px !important;
+      }
+      @include sm {
+        left: 20px !important;
+      }
+    }
+    .slick-next {
+      right: 20px !important;
+      @include md {
+        right: 50px !important;
+      }
+      @include sm {
+        right: 20px !important;
+      }
+    }
+    .slick-list {
+      @include md {
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+      }
+      @include sm {
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+      }
+      .slick-track {
+        .slick-slide {
+          opacity: 0.3;
+          transform: scale(0.3);
+          transition: all 0.2s ease-in;
+        }
+        .slick-active {
+          opacity: 0.7;
+          transform: scale(0.7);
+        }
+        .slick-current {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

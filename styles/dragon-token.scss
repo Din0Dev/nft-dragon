@@ -1,0 +1,47 @@
+.dragon_token {
+  background-image: url(/img/gameplay/gameplay_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  &__video {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    @include md { 
+      padding-bottom: 10rem;
+    }
+    @include sm {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    &__frame {
+      display: flex;
+      width: 30%;
+      align-items: center;
+      @include md { 
+        width: 45%;
+      }
+      @include sm {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+    &__note {
+      width: 30%;
+      align-items: center;
+      @include sm {
+        padding: 5rem 0;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}

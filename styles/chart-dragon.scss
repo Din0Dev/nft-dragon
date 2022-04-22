@@ -1,4 +1,9 @@
 .chart-dragon {
+  background-image: url(/img/tokenomic/tokenomic_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
   margin: 0;
   background-size: cover;
   .container {
@@ -10,8 +15,16 @@
     }
   }
   .chart-img{
-    background: black;
+    margin: 0 auto;
+    width: 50%;
+    @include md {
+      width: 70%;
+    }
+    @include sm {
+      width: 65%;
+    }
     img{
+      padding: 3rem 0;
       display: flex;
       justify-content: center;  
       margin: 0 auto;

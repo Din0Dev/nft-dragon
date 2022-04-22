@@ -64,139 +64,117 @@ const RoadMap = () => {
           synchronization of the components in the game.`,
     },
   ];
+  const roadmap = [
+    {
+      name: "",
+    },
+  ];
   return (
     <section className="roadmap">
-      <div className="section-timeline-4">
-        <div className="containercool-2">
-          <div className="timeline_wrappercool-2">
-            <div className="timeline_progresscool">
-              <div className="timeline_progress-barcool"></div>
+      <div className="text-fragment">
+        <img src="/img/roadmap/roadmap_text.png" alt="" />
+      </div>
+      <div className="roadmap_main row container">
+        <div className="roadmap_main__header">
+          <img src="/img/roadmap/roadmap_line_header.png" alt="" />
+        </div>
+        {/*  */}
+        <div className="roadmap_main__center">
+          <div className="roadmap_main__center__center-year">
+            <div className="roadmap_main__center__center-year__text">
+              <span>Q4</span>
+              <br></br>
+              <span>2021</span>
             </div>
-            <div
-              data-w-id="046baf0c-9b4c-ea28-05a2-50fd0f70aa61"
-              className="timeline_item-2"
-            >
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa62-718776cd"
-                className="timeline_left"
-              >
-                <div className="timeline_date-text">Q4/2021</div>
-              </div>
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa65-718776cd"
-                className="timeline_centre"
-              >
-                <div className="timeline_circle"></div>
-              </div>
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa67-718776cd"
-                className="timeline_right"
-              >
-                <div className="margin-bottom-xlarge">
-                  <div className="timeline_text-2">
-                    {`Game design/plan`}
-                    <br />
-                    Story telling
-                    <br />
-                    Whitepaper
-                    <br />
-                    Kick-off development
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              data-w-id="046baf0c-9b4c-ea28-05a2-50fd0f70aa89"
-              className="timeline_item-2"
-            >
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa8a-718776cd"
-                className="timeline_left"
-              >
-                <div className="timeline_date-text">Q1/2022</div>
-              </div>
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa8d-718776cd"
-                className="timeline_centre"
-              >
-                <div className="timeline_circle"></div>
-              </div>
-              <div className="timeline_right">
-                <div className="margin-bottom-medium-2">
-                  <div className="timeline_text-2">
-                    {`Presale & TGE`}
-                    <br />
-                    Demo Game Launch
-                    <br />
-                    New features development
-                    <br />
-                    Marketplace
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-w-id="046baf0c-9b4c-ea28-05a2-50fd0f70aa97"
-              className="timeline_item-2"
-            >
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa98-718776cd"
-                className="timeline_left"
-              >
-                <div className="timeline_date-text">Q2/2022</div>
-              </div>
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aa9b-718776cd"
-                className="timeline_centre"
-              >
-                <div className="timeline_circle"></div>
-              </div>
-              <div className="timeline_right">
-                <div className="margin-bottom-medium-2">
-                  <div className="timeline_text-2">
-                    Complete game
-                    <br />
-                    Ranking systems
-                    <br />
-                    Tournaments
-                    <br />
-                    Craft systems
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-w-id="046baf0c-9b4c-ea28-05a2-50fd0f70aaa4"
-              className="timeline_item-2"
-            >
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aaa5-718776cd"
-                className="timeline_left"
-              >
-                <div className="timeline_date-text">Q3/2022</div>
-              </div>
-              <div
-                id="w-node-_046baf0c-9b4c-ea28-05a2-50fd0f70aaa8-718776cd"
-                className="timeline_centre"
-              >
-                <div className="timeline_circle"></div>
-              </div>
-              <div className="timeline_right">
-                <div className="margin-bottom-medium-2">
-                  <div className="timeline_text-2">
-                    Major expansion
-                    <br />
-                    New territories
-                    <br />
-                    Talent system
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="overlay-fade-bottom-2"></div>
-            <div className="overlay-fade-top-2"></div>
+            <img src="/img/roadmap/roadmap_line_frame_year.png" alt="" />
           </div>
+          <img src="/img/roadmap/roadmap_line_center.png" alt="" />
+          <div className="roadmap_main__center__center-description">
+            <div className="roadmap_main__center__center-description__text">
+              <span>Game design/plan</span>
+              <br></br>
+              <span>Story telling</span>
+              <br></br>
+              <span>Whitepaper</span>
+              <br></br>
+              <span>Kick-off development</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_description.png" alt="" />
+          </div>
+        </div>
+        {/*  */}
+        <div className="roadmap_main__center">
+          <div className="roadmap_main__center__center-description">
+            <div className="roadmap_main__center__center-description__text">
+              <span>{`Presale & TGE`}</span>
+              <br></br>
+              <span>Demo Game Launch</span>
+              <br></br>
+              <span>New features development</span>
+              <br></br>
+              <span>Marketplace</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_description.png" alt="" />
+          </div>
+          <img src="/img/roadmap/roadmap_line_center.png" alt="" />
+          <div className="roadmap_main__center__center-year">
+            <div className="roadmap_main__center__center-year__text">
+              <span>Q1</span>
+              <br></br>
+              <span>2022</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_year.png" alt="" />
+          </div>
+        </div>
+        {/*  */}
+        <div className="roadmap_main__center">
+          <div className="roadmap_main__center__center-year">
+            <div className="roadmap_main__center__center-year__text">
+              <span>Q2</span>
+              <br></br>
+              <span>2022</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_year.png" alt="" />
+          </div>
+          <img src="/img/roadmap/roadmap_line_center.png" alt="" />
+          <div className="roadmap_main__center__center-description">
+            <div className="roadmap_main__center__center-description__text">
+              <span>Complete game</span>
+              <br></br>
+              <span>Ranking systems</span>
+              <br></br>
+              <span>Tournaments</span>
+              <br></br>
+              <span>Craft systems</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_description.png" alt="" />
+          </div>
+        </div>
+        {/*  */}
+        <div className="roadmap_main__center">
+          <div className="roadmap_main__center__center-description">
+            <div className="roadmap_main__center__center-description__text">
+              <span>Major expansion</span>
+              <br></br>
+              <span>New territories</span>
+              <br></br>
+              <span>Talent system</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_description.png" alt="" />
+          </div>
+          <img src="/img/roadmap/roadmap_line_center.png" alt="" />
+          <div className="roadmap_main__center__center-year">
+            <div className="roadmap_main__center__center-year__text">
+              <span>Q3</span>
+              <br></br>
+              <span>2022</span>
+            </div>
+            <img src="/img/roadmap/roadmap_line_frame_year.png" alt="" />
+          </div>
+        </div>
+        {/*  */}
+        <div className="roadmap_main__footer">
+          <img src="/img/roadmap/roadmap_line_footer.png" alt="" />
         </div>
       </div>
     </section>

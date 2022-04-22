@@ -3,51 +3,27 @@ import Image from "next/image";
 
 const DragonToken = (props) => {
   return (
-    <div className="container max-w-screen-xl m-auto mb-5 px-4">
-      <div className="bg-blue3 rounded-lg overflow-hidden">
-        <div className="bg-color-primary hidden sm:grid grid-cols-1 sm:grid-cols-10">
-          <div className="col-span-4 px-2 md:px-6 py-4 md:py-8 text-white flex flex-col justify-center">
-            <p>
-              {`
-              "Dragon-Tyrant builds a virtual world: Waste Land. That place was
-              still reeling from the war between humans and Dragons. Players can
-              earn tokens through quests, build a clan and even their own
-              country."
-              `}
-            </p>
-            {/* <div className="flex justify-center sm:justify-start">
-              <button className="flex items-center justify-center border-white text-white font-bold border-2 rounded-3xl py-1.5 px-6 sm:py-2 sm:px-7 mt-3 sm:mt-7 btn-blue">
-                Get DRAGON Token
-              </button>
-            </div> */}
+    <div className="dragon_token">
+      <div className="rounded-lg overflow-hidden">
+        <div className="sm:grid grid-cols-1 sm:grid-cols-10">
+          <div className="text-fragment col-span-10">
+            <img src="/img/gameplay/gameplay_text.png" alt="" />
           </div>
-          <div className="col-span-6">
-            <img
-              src="/img/home-slider-1.png"
-              className="w-full h-full round-lg"
-              alt=""
-            />
-          </div>
-        </div>
-        {/*  */}
-        <div className="bg-color-primary sm:hidden grid grid-cols-1 sm:grid-cols-10">
-          <div className="col-span-6">
-            <img
-              src="/img/home-slider-1.png"
-              className="w-full h-full round-lg"
-            />
-          </div>
-          <div className="col-span-4 px-2 md:px-6 py-4 md:py-8 text-white flex flex-col justify-center">
-            <p className="px-2">
-              Dragon War is a decentralized blockchain game with Play-To-Earn
-              concept. You can earn DRAGON Stones tokens by playing game then
-              use them to swap or continue playing.
-            </p>
-            {/* <div className="flex justify-center sm:justify-start">
-              <button className="flex items-center justify-center border-white text-white font-bold border-2 rounded-3xl py-1.5 px-6 sm:py-2 sm:px-7 mt-3 sm:mt-7 btn-blue">
-                Get DRAGON Token
-              </button>
-            </div> */}
+          <div className="dragon_token__video col-span-10">
+            <div className="col-span-5 dragon_token__video__frame">
+              <img
+                src="/img/gameplay/gameplay_frame_video.png"
+                className="dragon_token__video__frame_img"
+                alt=""
+              />
+            </div>
+            <div className="col-span-5 dragon_token__video__note">
+              <img
+                src="/img/gameplay/gameplay_note.png"
+                className="dragon_token__video__note_img"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

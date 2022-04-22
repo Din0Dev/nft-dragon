@@ -18,7 +18,7 @@ const HeaderLayout = (props) => {
   //! Render
   return (
     <header className="header-layout bg-primary relative flex justify-between items-center shadow-lg">
-      <div className="header-layout-inner max-w-screen-xl mx-auto flex justify-between items-center flex-1">
+      <div className="header-layout-inner max-w-screen-xl mx-auto flex justify-start items-center flex-1">
         <div className="relative logo">
           <a className="flex items-center logo-header sm:flex" href="#/">
             <img alt="logo" src="img/logo.png" />
@@ -36,8 +36,6 @@ const HeaderLayout = (props) => {
         </Menu>
         {/*  */}
         <div className="header-layout__button">
-          {/* <button className="btn-blue sb-btn">Start Battle</button>
-          <button className="btn-blue clw-btn">Collect wallet</button> */}
           <div
             className="header-layout__button_hamburger p-4 space-y-2 rounded shadow"
             onClick={handleChange}

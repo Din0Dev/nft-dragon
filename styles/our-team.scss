@@ -1,0 +1,38 @@
+.our-team {
+  background-image: url(/img/roadmap/roadmap_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  &__list {
+    margin: 0 auto;
+    @include md{
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr))  ;
+    }
+    @include sm{
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr))  ;
+    }
+    &__item {
+      padding: 2rem;
+      @include sm {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        padding: 1rem;
+        margin: 0 auto;
+        .our-team-img{
+          @include sm{
+            margin: 0 auto;
+            width: 70%;
+          }
+          @include md{
+            margin: 0 auto;
+            width: 60%;  
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,8 @@ const CharacterSlide = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div
+      <img
+        src="icon/button_next.png"
         className={className}
         style={{ ...style }}
         onClick={onClick}
@@ -17,7 +18,8 @@ const CharacterSlide = () => {
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div
+      <img
+        src="icon/button_prev.png"
         className={className}
         style={{ ...style }}
         onClick={onClick}
@@ -28,128 +30,64 @@ const CharacterSlide = () => {
   //! State
   var settings = {
     dots: false,
+    centerMode: true,
     infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
+    slidesToShow: 3,
+    autoplay: false,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow className="arrow-slide next-arrow" />,
-    prevArrow: <SamplePrevArrow className="arrow-slide prev-arrow" />,
     responsive: [
-      {
-        breakpoint: 1290,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          centerPadding: "30px",
         },
       },
     ],
+    centerPadding: "60px",
+    nextArrow: <SampleNextArrow className="arrow-slide next-arrow" />,
+    prevArrow: <SamplePrevArrow className="arrow-slide prev-arrow" />,
   };
 
+  const imgs = [{}];
   //! Render
   return (
-    <div className="mx-4 md:mx-10 my-12 mt-0">
-      <div className="container max-w-screen-md m-auto">
+    <div className="hero">
+      <div className="character-slide container m-auto">
+        <div className="text-fragment">
+          <img src="/img/hero/hero_text.png" alt="" />
+        </div>
         <Slider {...settings}>
           {/*  */}
-          <div className="m-auto h-full col-span-1 pt-4 w-full">
-            <div className="mx-4 md:mx-1 card-reposive">
-              <div className="rounded-lg border-4 lg:border-8 overflow-hidden h-full border-blue2 p-0 mt-12 md:mt-16 flex justify-center items-end home-card-dragon bg-center bg-no-repeat bg-cover bg-amry">
-                <div className="text-white text-center py-6 md:py-8 w-full px-4 bg-blur-black">
-                  <h3 className="text-xl text-white  md:text-3xl font-bold">
-                    Army
-                  </h3>
-                  <div className="mt-1.5" style={{ minHeight: "48px" }}>
-                    Own your dragons with many different skills based on their
-                    genes
-                  </div>
-                </div>
-              </div>
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
             </div>
           </div>
           {/*  */}
-          <div className="m-auto h-full col-span-1 pt-4 w-full">
-            <div className="mx-4 md:mx-1 card-reposive">
-              <div className="rounded-lg border-4 lg:border-8 overflow-hidden h-full border-blue2 p-0 mt-12 md:mt-16 flex justify-center items-end home-card-dragon bg-center bg-no-repeat bg-cover bg-tournament">
-                <div className="text-white text-center py-6 md:py-8 w-full px-4 bg-blur-black">
-                  <h3 className="text-xl text-white md:text-3xl font-bold">
-                    Tournament
-                  </h3>
-                  <div className="mt-1.5" style={{ minHeight: "48px" }}>
-                    <p>
-                      PvP battle to earn real <br /> money rewards
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char3"></div>
             </div>
           </div>
           {/*  */}
-          <div className="m-auto h-full col-span-1 pt-4 w-full">
-            <div className="mx-4 md:mx-1 card-reposive">
-              <div className="rounded-lg border-4 lg:border-8 overflow-hidden h-full border-blue2 p-0 mt-12 md:mt-16 flex justify-center items-end home-card-dragon bg-center bg-no-repeat bg-cover bg-char3">
-                <div className="text-white text-center py-6 md:py-8 w-full px-4 bg-blur-black">
-                  <h3 className="text-xl text-white md:text-3xl font-bold">
-                    Tournament
-                  </h3>
-                  <div className="mt-1.5" style={{ minHeight: "48px" }}>
-                    <p>
-                      PvP battle to earn real <br /> money rewards
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
             </div>
           </div>
           {/*  */}
-          <div className="m-auto h-full col-span-1 pt-4 w-full">
-            <div className="mx-4 md:mx-1 card-reposive">
-              <div className="rounded-lg border-4 lg:border-8 overflow-hidden h-full border-blue2 p-0 mt-12 md:mt-16 flex justify-center items-end home-card-dragon bg-center bg-no-repeat bg-cover bg-char4">
-                <div className="text-white text-center py-6 md:py-8 w-full px-4 bg-blur-black">
-                  <h3 className="text-xl text-white md:text-3xl font-bold">
-                    Tournament
-                  </h3>
-                  <div className="mt-1.5" style={{ minHeight: "48px" }}>
-                    <p>
-                      PvP battle to earn real <br /> money rewards
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
             </div>
           </div>
           {/*  */}
-          <div className="m-auto h-full col-span-1 pt-4 w-full">
-            <div className="mx-4 md:mx-1 card-reposive">
-              <div className="rounded-lg border-4 lg:border-8 overflow-hidden h-full border-blue2 p-0 mt-12 md:mt-16 flex justify-center items-end home-card-dragon bg-center bg-no-repeat bg-cover bg-char5">
-                <div className="text-white text-center py-6 md:py-8 w-full px-4 bg-blur-black">
-                  <h3 className="text-xl text-white md:text-3xl font-bold">
-                    Tournament
-                  </h3>
-                  <div className="mt-1.5" style={{ minHeight: "48px" }}>
-                    <p>
-                      PvP battle to earn real <br /> money rewards
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
             </div>
           </div>
           {/* -- */}
