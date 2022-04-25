@@ -1,8 +1,15 @@
 .footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
+  background-image: url(/img/footer/footer_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  &__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
   &__logo {
     display: flex;
     justify-content: center;

@@ -38,35 +38,34 @@ const FooterLayout = () => {
 
   //! Render
   return (
-    <Footer
-      className="footer bg-color-primary"
-      style={{ textAlign: "center", color: "white" }}
-    >
-      <div className="container sm:grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-12 footer__logo">
-          <div className="footer__logo_img">
-            <img src="img/logo.png" alt="" />
+    <Footer className="footer bg-color-primary">
+      <div className="bg-linear-blue">
+        <div className="footer_container container sm:grid grid-cols-1 sm:grid-cols-12">
+          <div className="col-span-12 footer__logo">
+            <div className="footer__logo_img">
+              <img src="img/logo.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="footer__social_list">
-        {socialList.map((el) => (
-          <div key={el.id} className="col-span-3">
-            <img className="footer__social_list_item" src={el.src} />
-          </div>
-        ))}
-      </div>
-      <div className="footer__download_list">
-        {downloadApp.map((el) => (
-          <div key={el.id} className=" col-span-3">
-            <img className="footer__download_list_item" src={el.src} />
-          </div>
-        ))}
-      </div>
-      <div className="footer__copyright">
-        <span className="footer__copyright__text">
-          Copyright © 2021, Dragontyrant. All Rights Reserved
-        </span>
+        <div className="footer__social_list">
+          {socialList.map((el) => (
+            <div key={el.id} className="col-span-3">
+              <img className="footer__social_list_item" src={el.src} />
+            </div>
+          ))}
+        </div>
+        <div className="footer__download_list">
+          {downloadApp.map((el) => (
+            <div key={el.id} className=" col-span-3">
+              <img className="footer__download_list_item" src={el.src} />
+            </div>
+          ))}
+        </div>
+        <div className="footer__copyright">
+          <span className="footer__copyright__text">
+            Copyright © 2021, Dragontyrant. All Rights Reserved
+          </span>
+        </div>
       </div>
     </Footer>
   );

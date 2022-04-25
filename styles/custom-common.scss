@@ -64,7 +64,6 @@ body {
   background: var(--blur-bg-black);
 }
 
-
 //* Header Layout
 
 .header-layout {
@@ -170,7 +169,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      
+
       .sb-btn {
         @include sm {
           margin-right: 0;
@@ -223,14 +222,35 @@ footer {
 }
 
 // Text Fragment
-.text-fragment{
+.text-fragment {
   padding-top: 5rem;
   max-width: 500px;
   margin: 0 auto;
-  @include md{
+  @include md {
     max-width: 400px;
   }
-  @include sm{
+  @include sm {
     max-width: 250px;
   }
+}
+
+//
+.bg-linear-red {
+  background-color: rgba(59, 0, 0, 0.75);
+  backdrop-filter: blur(5%);
+  box-shadow: inset 0px 20px 20px 20px rgba(58, 0, 0, 1);
+
+}
+.bg-shadow-red {
+  box-shadow: 0px -61px 25px -10px rgba(58, 0, 0, 1);
+}
+
+.bg-linear-blue {
+  background-color: rgba(15, 45, 121, 0.45);
+  backdrop-filter: blur(5%);
+  box-shadow: inset 0px 20px 20px 20px rgba(15, 45, 121, 0.8);
+
+}
+.bg-shadow-blue {
+  box-shadow: 0px -61px 25px -10px rgba(53, 100, 111, 1);
 }

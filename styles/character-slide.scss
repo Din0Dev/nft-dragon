@@ -1,5 +1,4 @@
 .hero {
-  padding-bottom: 10rem;
   @include md {
     padding-bottom: 5rem;
   }
@@ -10,6 +9,7 @@
     height: 450px !important;
   }
   .character-slide {
+    padding-bottom: 10rem;
     .slick-arrow {
       width: 55px !important;
       height: 55px !important;

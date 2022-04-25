@@ -71,6 +71,8 @@ const RoadMap = () => {
   ];
   return (
     <section className="roadmap">
+      <div className="bg-linear-red bg-shadow-red">
+
       <div className="text-fragment">
         <img src="/img/roadmap/roadmap_text.png" alt="" />
       </div>
@@ -176,6 +178,7 @@ const RoadMap = () => {
         <div className="roadmap_main__footer">
           <img src="/img/roadmap/roadmap_line_footer.png" alt="" />
         </div>
+      </div>
       </div>
     </section>
   );

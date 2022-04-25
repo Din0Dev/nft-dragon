@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding-bottom: 8rem;
   &__list {
     @include md{
       display: grid;
@@ -34,5 +33,6 @@
         }
       }
     }
+    padding-bottom: 8rem;
   }
 }
