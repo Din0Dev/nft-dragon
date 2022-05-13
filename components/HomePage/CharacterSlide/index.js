@@ -54,46 +54,44 @@ const CharacterSlide = () => {
   const imgs = [{}];
   //! Render
   return (
-    <div className="hero bg-shadow-red">
-      <div className="bg-linear-red">
-        <div className=" character-slide container m-auto">
-          <div className="text-fragment">
-            <img src="/img/hero/hero_text.png" alt="" />
-          </div>
-          <Slider {...settings}>
-            {/*  */}
-            <div className="m-auto h-full col-span-1 pt-4">
-              <div className="card-reposive">
-                <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="m-auto h-full col-span-1 pt-4">
-              <div className="card-reposive">
-                <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char3"></div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="m-auto h-full col-span-1 pt-4">
-              <div className="card-reposive">
-                <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="m-auto h-full col-span-1 pt-4">
-              <div className="card-reposive">
-                <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="m-auto h-full col-span-1 pt-4">
-              <div className="card-reposive">
-                <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
-              </div>
-            </div>
-            {/* -- */}
-          </Slider>
+    <div className="hero">
+      <div className=" character-slide container m-auto">
+        <div className="text-fragment">
+          <img src="/img/hero/hero_text.png" alt="" />
         </div>
+        <Slider {...settings}>
+          {/*  */}
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char3"></div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char4"></div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="m-auto h-full col-span-1 pt-4">
+            <div className="card-reposive">
+              <div className="home-card-dragon bg-center bg-no-repeat bg-cover bg-char5"></div>
+            </div>
+          </div>
+          {/* -- */}
+        </Slider>
       </div>
     </div>
   );

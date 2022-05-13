@@ -1,4 +1,9 @@
 .hero {
+  background-image: url(/img/hero/hero_background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
   @include md {
     padding-bottom: 5rem;
   }

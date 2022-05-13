@@ -3,7 +3,6 @@ import React from "react";
 const ChartDragon = () => {
   return (
     <section className="chart-dragon">
-      <div className="bg-linear-blue ">
         <div className="row">
           <div className="col-12">
             <div className="text-fragment">
@@ -16,7 +15,6 @@ const ChartDragon = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

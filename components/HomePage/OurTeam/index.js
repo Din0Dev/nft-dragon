@@ -14,16 +14,14 @@ const OurTeam = () => {
 
   return (
     <section className="our-team">
-      <div className="bg-linear-red bg-shadow-red">
-        <div className="row">
-          <div className="col-12">
-            <div className="text-fragment">
-              <img src="/img/ourteam/ourteam_text.png" alt="" />
-            </div>
+      <div className="row">
+        <div className="col-12">
+          <div className="text-fragment">
+            <img src="/img/ourteam/ourteam_text.png" alt="" />
           </div>
-          <div className="our-team__list container sm:grid grid-cols-1 sm:grid-cols-12">
-            {items}
-          </div>
+        </div>
+        <div className="our-team__list container sm:grid grid-cols-1 sm:grid-cols-12">
+          {items}
         </div>
       </div>
     </section>
