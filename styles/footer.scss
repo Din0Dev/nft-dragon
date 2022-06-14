@@ -1,4 +1,6 @@
 .footer {
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url(/img/footer/footer_background.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -11,11 +13,11 @@
     padding: 0;
   }
   &__logo {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -10rem;
-    z-index: 2;
     @include md {
       margin-top: -7rem;
     }
@@ -23,6 +25,11 @@
       margin-top: -5rem;
     }
     &_img {
+      z-index: 1;
+      img{
+        width: 70%;
+        margin: 0 auto;
+      }
       @include md {
         width: 50%;
       }
@@ -48,8 +55,16 @@
   &__copyright {
     width: 100%;
     text-align: center;
+    font-size: 20px;
+    color: wheat;
     @include sm{
       font-size: 12px;
     }
+  }
+  &__social_list{
+    margin-bottom: 5rem;
+  }
+  &__download_list{
+    margin-bottom: 10rem;
   }
 }

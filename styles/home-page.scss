@@ -1,4 +1,9 @@
+body{
+  background-color: black;
+}
 .home-page {
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
   background-image: url(/img/bg-home-main.png);
   background-repeat: no-repeat;
@@ -61,14 +66,13 @@
 .banner {
   background-image: url(/img/bg-home-banner.png);
   background-repeat: no-repeat;
-  background-position: 50%;
   background-size: cover;
-  height: calc(100vh - 80px);
-  max-height: 700px;
+  background-position: center;
+  height: 1076px;
   &__inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     max-width: 1280px;
     height: 100%;
     margin: auto;

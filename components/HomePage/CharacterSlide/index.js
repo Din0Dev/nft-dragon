@@ -59,7 +59,7 @@ const CharacterSlide = () => {
         <div className="text-fragment">
           <img src="/img/hero/hero_text.png" alt="" />
         </div>
-        <Slider {...settings}>
+        <Slider style={{width: 1285, margin: '0 auto'}} {...settings}>
           {/*  */}
           <div className="m-auto h-full col-span-1 pt-4">
             <div className="card-reposive">
@@ -93,6 +93,13 @@ const CharacterSlide = () => {
           {/* -- */}
         </Slider>
       </div>
+
+      <div className="col-12">
+            <div className="text-fragment tokennomic_text">
+              <img src="/img/tokenomic/tokenomic_text.png" alt="" />
+            </div>
+          </div>
+
     </div>
   );
 };

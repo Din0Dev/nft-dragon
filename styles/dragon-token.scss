@@ -4,12 +4,13 @@
   background-position: top;
   background-size: cover;
   background-color: black;
-
+  height: 1080px;
+  min-height: 1080px;
   &__video {
-    padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding: 10rem 0;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     @include md { 
       padding-bottom: 10rem;
     }
@@ -19,30 +20,13 @@
     }
     &__frame {
       display: flex;
-      width: 30%;
       align-items: center;
-      @include md { 
-        width: 45%;
-      }
-      @include sm {
-        width: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-      }
     }
     &__note {
-      width: 30%;
-      align-items: center;
-      @include sm {
-        padding: 5rem 0;
-        width: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-      }
+     
     }
+  }
+  .dragon_token__video__frame, .dragon_token__video__note{
+    padding: 30px;
   }
 }

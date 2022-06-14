@@ -39,8 +39,8 @@ const FooterLayout = () => {
   //! Render
   return (
     <Footer className="footer bg-color-primary">
-      <div className="footer_container container sm:grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-12 footer__logo">
+      <div className="footer_container">
+        <div className="footer__logo">
           <div className="footer__logo_img">
             <img src="img/logo.png" alt="" />
           </div>

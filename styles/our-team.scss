@@ -5,6 +5,7 @@
   background-size: cover;
 
   &__list {
+    width: 1285px;
     margin: 0 auto;
     @include md{
       display: grid;

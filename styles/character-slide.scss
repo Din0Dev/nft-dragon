@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-
+  position: relative;
   @include md {
     padding-bottom: 5rem;
   }
@@ -11,9 +11,21 @@
     padding-bottom: 3rem;
   }
   .home-card-dragon {
-    height: 450px !important;
+    height: 600px !important;
+  }
+  .tokennomic_text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -120px;
   }
   .character-slide {
+    .text-fragment{
+      padding-top: 10rem;
+      img{
+        margin: 0 auto;
+      }
+    }
     padding-bottom: 10rem;
     .slick-arrow {
       width: 55px !important;
