@@ -22,11 +22,17 @@
       display: flex;
       align-items: center;
     }
-    &__note {
-     
+  }
+  .dragon_token__video__frame{
+    .dragon_token__video__frame_video{
+      z-index: 1;
+      border:20px solid transparent;
+      border-image-source: url(/img/gameplay/gameplay_frame_video.png);
+      border-image-slice: 30;
     }
   }
   .dragon_token__video__frame, .dragon_token__video__note{
+    position: relative;
     padding: 30px;
   }
 }
